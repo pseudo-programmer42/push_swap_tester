@@ -4,12 +4,12 @@
 ```
 |
 |- [ Your push_swap directory ]
-|		|- Makefile (Your push_swap Makefile)
+|	|- Makefile (Your push_swap Makefile)
 |
 |- [ tester ]
-|		|- push_swap_tester.bash
-|		|- random_numbers.cpp
-|		|- Makefile
+|	|- push_swap_tester.bash
+|	|- random_numbers.cpp
+|	|- Makefile
 |
 ```
 - push_swap 프로젝트 디렉토리 명이 'push_swap'이 아니면 bash 파일에 적힌 push_swap 경로를 여러분의 디렉토리로 교체하거나 디렉토리명을 'push_swap'으로 바꾸세요.  
