@@ -21,7 +21,7 @@
 
 ## Install & run
 ```
-git clone git@github.com:minckim0/push_swap_tester.git
+git clone git@github.com:minckim42/push_swap_tester.git
 cd push_swap_tester
 ./push_swap_tester.bash
 ```
