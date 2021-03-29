@@ -6,7 +6,7 @@
 /*   By: minckim <minckim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/07 01:27:52 by minckim           #+#    #+#             */
-/*   Updated: 2021/03/12 15:58:58 by minckim          ###   ########.fr       */
+/*   Updated: 2021/03/30 04:28:35 by minckim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,9 +82,7 @@ int		main(int argc, char** argv)
 	random_number_vector(v, size, min, max);
 	for (int i : v)
 	{
-		std::string		num = std::to_string(i);
-		write(1, num.c_str(), num.length());
-		write(1, " ", 1);
+		std::cout << i << " ";
 	}
 	return 0;
 }
