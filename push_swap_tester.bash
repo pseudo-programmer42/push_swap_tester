@@ -6,7 +6,7 @@
 #    By: minckim <minckim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/14 18:07:27 by minckim           #+#    #+#              #
-#    Updated: 2021/03/22 23:18:02 by minckim          ###   ########.fr        #
+#    Updated: 2021/07/05 18:50:48 by minckim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -314,8 +314,8 @@ test_error 1 2 2147483648
 test_error 1 2 -2147483649
 # negative numbers, near overflow
 test 3 1 -5 2
-test 3 1 -214743648 2
-test 3 214743647 2 1
+test 3 1 -2147483648 2
+test 3 2147483647 2 1
 # # 3 elements
 test 3 2 0 1
 test 3 1 2 3
