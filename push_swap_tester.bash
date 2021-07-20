@@ -17,15 +17,22 @@
 
 #	|- [ push_swap ]
 #			|- Makefile (Your push_swap Makefile)
+#			|- checker_linux (or checker_Mac)
 #	|- [ push_swap_tester ]
 #			|- push_swap_tester.bash
 #			|- random_numbers.cpp
 #			|- Makefile
 
 #==============================================================================
-
 # push_swap directory
+
 PUSHSWAP_DIR=../push_swap
+
+#==============================================================================
+# OS
+
+OS="Mac"
+# OS="linux"
 
 #==============================================================================
 
@@ -51,7 +58,13 @@ WHITE=$'\033[0;39m'
 #==============================================================================
 # Path
 PUSHSWAP=$PUSHSWAP_DIR/push_swap
-CHECKER=$PUSHSWAP_DIR/checker
+if [[ $OS = "linux" ]]
+then
+	CHECKER=$PUSHSWAP_DIR/checker_linux
+elif [[ $OS = "Mac" ]]
+then
+	CHECKER=$PUSHSWAP_DIR/checker_Mac
+fi
 TESTER=./random_numbers
 
 #==============================================================================
@@ -111,7 +124,7 @@ function test_error(){
 	if [ ! -z $ANS_OUT ]
 	then
 		# echo "Display : "$RED$ANS_OUT$WHITE"(Standard out)"
-		print_display FAIL $ANS_OUT"(stdout)"
+		print_display FAIL $ANS_OUT"(Error should be displayed on stderr.)"
 		print_result "FAIL"
 	elif [[ "Error" = "$ANS_ERR" ]]
 	then
