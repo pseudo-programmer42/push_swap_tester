@@ -6,7 +6,7 @@
 #    By: minckim <minckim@student.42seoul.kr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/03/14 18:07:27 by minckim           #+#    #+#              #
-#    Updated: 2021/07/05 18:50:48 by minckim          ###   ########.fr        #
+#    Updated: 2021/11/29 15:27:28 by minckim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,8 @@ then
 elif [[ $OS = "Mac" ]]
 then
 	CHECKER=$PUSHSWAP_DIR/checker_Mac
+else
+	CHECKER=$PUSHSWAP_DIR/checker
 fi
 TESTER=./random_numbers
 
